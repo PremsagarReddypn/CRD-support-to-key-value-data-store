@@ -50,6 +50,7 @@ def delete(key):
                 print("key is successfully deleted")
             else:
                 print("error: time-to-live of",key,"has expired")
+                del d[key]
         else:
             del d[key]
             print("key is successfully deleted")
